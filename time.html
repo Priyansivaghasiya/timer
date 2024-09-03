@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        .first{
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+            margin: 10vw;
+        }
+        input{
+            height: 5vh;
+            width: 35vw;
+        }
+        button{
+            height: 5vh;
+            width: 6vw;
+        }
+        .visible{
+            display: flex;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="first">
+        <div >
+            <input type="text" id="input" placeholder="Enter Seconds">
+        </div>
+         <div>
+                <button onclick="hours()" >Hours</button>
+                <button onclick="mintus()">Minutes</button>
+                <button onclick="seconds()">Second</button>
+                <div id="output"></div> 
+        </div>
+        <div>
+            <span id="hoursoutput" class="hidden" >1</span>
+            <span id="minutesoutput" class="hidden">1</span>
+            <span id="secondoutput" class="hidden"></span>
+        </div>
+    </div>
+        <script src="time.js"></script>
+</body>
+</html>
+
+
